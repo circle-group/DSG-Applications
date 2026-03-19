@@ -1,6 +1,6 @@
 # Differentiable Straightest Geodesic Applications
 
-This repository contains the code for the applications of the Differentiable Straightest Geodesic for the digeo package.
+This repository contains the code for the applications using Differentiable Straightest Geodesic from the digeo package.
 
 A single python environment can be used for all the applications, but the code is organized in separate folders for each application, with their own README files. The requirements can be independently installed for each application (using the `requirements.txt` file in each application folder), or install all the requirements at once with the command below.
 
