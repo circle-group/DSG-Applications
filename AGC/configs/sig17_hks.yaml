@@ -1,0 +1,29 @@
+# config file for segmentation task on SIG17 dataset
+
+task: face_segmentation # task type, can be classification, vertex_segmentation, or face_segmentation
+
+model:
+  output_size : 8 # number of output classes
+  filter_sizes : [4, 4] # the number of filters per patch (4 patches & 4 filters => 16 channels)
+  n_patches: [4, 8] # the number of patches per vertex
+  rho_init : [0.1, 0.2] # the inital sizes of the rings of a patch
+  n_rho : 2 # the number of rings per patch
+  n_theta : 8 # the number of angular bins in a patch
+  learn_rho : true # if the size of the patches should be learned
+  input: hks # can be xyz or hks
+
+optim:
+  test_every: 1 # when to evaluate the test set
+  epochs: 40
+  lr: 0.001
+  gradient_clipping: 1.0
+  label_smoothing: 0.1
+  lr_scheduler:
+    type: cosine # use cosine or none
+    min_lr: 0.00001
+
+mesh:
+  rotate: true # rotate the meshes during training
+  scale: true # scale the meshes during training
+  min_scale: 0.85 # the min scale of a mesh (if scale == true)
+  max_scale: 1.15 # the max scale of a mesh (if scale == true)

@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.10
+digeo
+plotly
+matplotlib
+scipy
+numpy
+pyyaml
+tqdm
+libigl
+robust-laplacian
+potpourri3d
+polyscope
+open3d
+trimesh

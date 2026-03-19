@@ -1,0 +1,15 @@
+n_points: 20000
+n_points_test: 5000
+epochs: 10000
+batch_size_OT: 1024
+batch_size: 256
+k_step: 5
+save_every: 20
+eval_every: 20
+avoid_holes: False
+
+optim:
+  lr: 0.00001
+  scheduler:
+    type: none
+    eta_min: 0.000001

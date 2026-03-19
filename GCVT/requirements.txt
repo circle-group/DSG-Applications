@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.10
+digeo
+numpy
+scipy
+plotly
+matplotlib
+potpourri3d
